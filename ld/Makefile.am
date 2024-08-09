@@ -276,6 +276,7 @@ ALL_EMULATION_SOURCES = \
 	eelf32z80.c \
 	eelf_i386.c \
 	eelf_i386_be.c \
+    eelf_i386_chaos.c \
 	eelf_i386_fbsd.c \
 	eelf_i386_haiku.c \
 	eelf_i386_ldso.c \
@@ -453,6 +454,7 @@ ALL_64_EMULATION_SOURCES = \
 	eelf64tilegx_be.c \
 	eelf_mipsel_haiku.c \
 	eelf_x86_64.c \
+    eelf_x86_64_chaos.c \
 	eelf_x86_64_cloudabi.c \
 	eelf_x86_64_fbsd.c \
 	eelf_x86_64_haiku.c \

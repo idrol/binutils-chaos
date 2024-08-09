@@ -361,6 +361,11 @@ i[3-7]86-*-bsd386)	targ_emul=i386bsd
 i[3-7]86-*-bsdi*)	targ_emul=i386bsd
 			targ_extra_ofiles=
 			;;
+i[3-7]86-*-chaos*)
+            targ_emul=elf_i386_chaos
+            targ_extra_emuls=elf_i386
+            targ64_extra_emuls="elf_x86_64_chaos elf_x86_64"
+            ;;
 i[3-7]86-*-linux-*)	targ_emul=elf_i386
 			targ_extra_emuls="elf_iamcu"
 			targ64_extra_emuls="elf_x86_64 elf32_x86_64"
@@ -986,6 +991,10 @@ vax-*-linux-*)		targ_emul=elf32vax
 			;;
 visium-*-elf)		targ_emul=elf32visium
 			;;
+x86_64-*-chaos*)
+            targ_emul=elf_x86_64_chaos
+            targ_extra_emuls="elf_i386_chaos elf_x86_64 elf_i386"
+            ;;
 x86_64-*-rdos*)		targ_emul=elf64rdos
 			;;
 x86_64-*-cloudabi*)	targ_emul=elf_x86_64_cloudabi
